@@ -9,6 +9,8 @@ lazy val AkkaVersion = "2.6.8"
 lazy val AlpakkaVersion = "2.0.1"
 lazy val AlpakkaKafkaVersion = "2.0.4"
 
+publishArtifact := false
+
 libraryDependencies ++= Seq(
   "com.lightbend.akka" %% "akka-stream-alpakka-elasticsearch" % AlpakkaVersion,
   "com.typesafe.akka" %% "akka-stream-kafka" % AlpakkaKafkaVersion,
